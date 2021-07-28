@@ -21,11 +21,13 @@
   <body>
     <header class="header">
       <div class="conteiner">
-        <a class="logo link" href="./index.html">
-          Web<span class="dark">Studio</span>
-        </a>
         <nav class="nav-menu">
-          <ul class="nav-list list">
+          <ul class="nav-list">
+            <li class="list-logo">
+              <a class="logo link" href="./index.html">
+                Web<span class="dark">Studio</span>
+              </a>
+            </li>
             <li class="list-item">
               <a class="link current" href="./index.html">Студия</a>
             </li>
@@ -48,11 +50,10 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="button">Заказать услугу</button>
+        <div class="conteiner">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="button">Заказать услугу</button>
+        </div>
       </section>
 
       <section class="specials">
@@ -92,8 +93,8 @@
       </section>
 
       <section class="our-job">
-        <h2 class="job-title">Чем мы занимаемся</h2>
         <div class="conteiner">
+          <h2 class="job-title">Чем мы занимаемся</h2>
           <ul class="job-list list">
             <li class="list-item">
               <img
@@ -127,8 +128,8 @@
       </section>
 
       <section class="our-team">
-        <h2 class="team-title">Наша команда</h2>
         <div class="conteiner">
+          <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="list-item card">
               <img
@@ -138,8 +139,10 @@
                 height="260"
                 alt="Игорь Демьяненко"
               />
-              <h3 class="item-title">Игорь Демьяненко</h3>
-              <p class="item-text" lang="en">Product Designer</p>
+              <div class="description-card">
+                <h3 class="item-title">Игорь Демьяненко</h3>
+                <p class="item-text" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="list-item card">
               <img
@@ -149,8 +152,10 @@
                 height="260"
                 alt="Ольга Репина"
               />
-              <h3 class="item-title">Ольга Репина</h3>
-              <p class="item-text" lang="en">Frontend Developer</p>
+              <div class="description-card">
+                <h3 class="item-title">Ольга Репина</h3>
+                <p class="item-text" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="list-item card">
               <img
@@ -160,8 +165,10 @@
                 height="260"
                 alt="Николай Тарасов"
               />
-              <h3 class="item-title">Николай Тарасов</h3>
-              <p class="item-text" lang="en">Marketing</p>
+              <div class="description-card">
+                <h3 class="item-title">Николай Тарасов</h3>
+                <p class="item-text" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="list-item card">
               <img
@@ -171,8 +178,10 @@
                 height="260"
                 alt="Михаил Ермаков"
               />
-              <h3 class="item-title">Михаил Ермаков</h3>
-              <p class="item-text" lang="en">UI Designer</p>
+              <div class="description-card">
+                <h3 class="item-title">Михаил Ермаков</h3>
+                <p class="item-text" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>

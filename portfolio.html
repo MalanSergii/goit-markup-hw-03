@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,11 +20,13 @@
   <body>
     <header class="header">
       <div class="conteiner">
-        <a class="logo link" href="./index.html">
-          Web<span class="dark">Studio</span>
-        </a>
         <nav class="nav-menu">
-          <ul class="nav-list list">
+          <ul class="nav-list">
+            <li class="list-logo">
+              <a class="logo link" href="./index.html">
+                Web<span class="dark">Studio</span>
+              </a>
+            </li>
             <li class="list-item">
               <a class="link" href="./index.html">Студия</a>
             </li>
@@ -43,8 +49,8 @@
 
     <main>
       <section class="portfolio">
-        <h1 class="selection visually-hidden">Фильтр по проектам</h1>
         <div class="conteiner">
+          <h1 class="selection visually-hidden">Проекты</h1>
           <ul class="selection-list list">
             <li class="list-item">
               <button class="button current">Все</button>
@@ -57,7 +63,6 @@
             <li class="list-item"><button class="button">Маркетинг</button></li>
           </ul>
 
-          <h2 class="projects visually-hidden">Проекты</h2>
           <ul class="projects-list list">
             <li class="list-item card">
               <a class="item-link link" href="">

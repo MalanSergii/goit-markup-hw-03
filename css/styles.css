@@ -41,14 +41,13 @@ h4 {
   overflow: hidden;
 }
 .conteiner {
-  display: flex;
-  align-items: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .link {
   /* remove all decoration from links */
   display: block;
@@ -69,6 +68,9 @@ h4 {
   background: var(--third-color);
   border-bottom: 1px solid #ececec;
 }
+.header .conteiner {
+  display: flex;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -87,12 +89,17 @@ h4 {
 .header .link:focus {
   color: var(--active-color);
 }
+.nav-menu {
+  margin-right: auto;
+}
 .nav-list {
   display: flex;
-  margin-left: 93px;
+  align-items: center;
 }
-.nav-menu .link {
-  display: block;
+.list-logo {
+  margin-right: 93px;
+}
+.header .list-item {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -100,7 +107,7 @@ h4 {
 .nav-menu .list-item:not(:last-child) {
   margin-right: 50px;
 }
-.nav-list .link {
+.list-item .link {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -113,7 +120,6 @@ h4 {
 }
 .contact-list {
   display: flex;
-  margin-left: auto;
   align-items: center;
 }
 .contact-list .list-item:not(:last-child) {
@@ -133,15 +139,17 @@ h4 {
 .hero {
   background: var(--hero-footer-bgcolor);
   text-align: center;
-  width: 100%;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
   font-size: 44px;
+  max-width: 696px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: uppercase;
   color: var(--third-color);
   margin-bottom: 30px;
@@ -154,8 +162,8 @@ h4 {
   color: var(--third-color);
   background: var(--active-color);
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
   border-radius: 4px;
   padding: 10px 32px;
 }
@@ -166,11 +174,11 @@ h4 {
   font-family: "Roboto", sans-serif;
 }
 /* ------section:specials------ */
-
+.specials {
+  padding-top: 94px;
+}
 .spec-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .spec-item {
   width: 270px;
@@ -209,7 +217,10 @@ h4 {
   margin-bottom: 0;
 }
 /* ----section:our job---- */
-
+.our-job {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .our-job .job-title {
   font-style: normal;
   font-weight: 700;
@@ -222,7 +233,6 @@ h4 {
 }
 .job-list {
   display: flex;
-  margin-bottom: 94px;
 }
 .job-list .list-item {
   width: 370px;
@@ -252,11 +262,10 @@ h4 {
 }
 .team-list {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
-.our-team .list-img {
-  margin-bottom: 30px;
+
+.our-team .list-item:not(last-child) {
+  margin-right: 30px;
 }
 .our-team .item-title {
   font-weight: 500;
@@ -264,8 +273,8 @@ h4 {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
   margin-bottom: 10px;
+  color: var(--accent-color);
 }
 .our-team .item-text {
   font-style: normal;
@@ -274,16 +283,17 @@ h4 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-bottom: 30px;
+}
+.description-card {
+  padding: 30px 15px;
 }
 /* --------------------footer-------------------- */
 .footer {
   background: var(--hero-footer-bgcolor);
-}
-.footer-items {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -302,7 +312,7 @@ h4 {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address-link.link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -323,13 +333,13 @@ h4 {
 /* --------------------Portfolio-------------------- */
 
 .portfolio .conteiner {
-  flex-direction: column;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .selection-list {
   display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 .selection-list .list-item:not(:last-child) {
@@ -362,16 +372,19 @@ h4 {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  /* margin: -30px; */
 }
 .context {
   padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .projects-list .list-item {
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
-  width: 370px;
+  min-width: 370px;
+  /* margin: 15px; */
 }
 .projects-list .list-item:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
@@ -384,9 +397,9 @@ h4 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin-bottom: 4px;
   letter-spacing: 0.06em;
   color: var(--accent-color);
-  margin-bottom: 4px;
 }
 .projects-list .link-text {
   font-style: normal;
