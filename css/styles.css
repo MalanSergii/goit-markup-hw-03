@@ -267,7 +267,7 @@ h4 {
   display: flex;
 }
 
-.our-team .list-item:not(last-child) {
+.our-team .list-item:not(:last-child) {
   margin-right: 30px;
 }
 .our-team .item-title {
